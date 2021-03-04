@@ -13,7 +13,7 @@ class ContactList extends Component {
 
 
     state = {
-        random: null,
+        randomNumber: null,
         allContacts: null,
         sortByName: true,
         sortByPopularity: false,
