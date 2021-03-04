@@ -21,8 +21,6 @@ class ContactList extends Component {
 
     }
 
-
-
     randomContact = () => {
         const randomNumber = Math.round(Math.random() * (restOfContacts.length - 1));
         if (restOfContacts.length > 0) {
@@ -54,14 +52,7 @@ class ContactList extends Component {
         listedContacts.splice(index.index, 1)
         this.setState({ removed: index })
         this.setState({ allContacts: false });
-
-
-
     }
-
-
-
-
 
 
     render() {
@@ -98,6 +89,7 @@ class ContactList extends Component {
 
                         </tr>
                     </thead>
+
                     <tbody>
                         {listedContacts.map((contact, index) => (
                             <tr key={listedContacts.id}>
